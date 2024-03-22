@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    font-family: "DM Sans", sans-serif;    
+}
+
+.container{
+    background-color: #ccc;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.container h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-brand img{
+    height: 6.5rem;
+    width: auto;
+}
+
+.navbar{
+    background-color: #ccc;
+}
+
+nav .btn{
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    background-color: #2d0692;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: #ccc;
+    color: #2d0692;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/*Register*/
+
+.card-form{
+    text-align: justify;
+}
+input[type="submit"]{
+    width: 10rem;
+}
+
+

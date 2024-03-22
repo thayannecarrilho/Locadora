@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Cadastrar Clientes</h2>
+  <div class="card-form">
+<form class="row g-3" action="/register/insertdata" method="POST">
+  <div class="col-md-3">
+    <label for="cpf" class="form-label">CPF: </label>
+    <input type="text" name="cpf" class="form-control" placeholder="Apenas 11 dígitos">
+  </div>
+  <div class="col-md-9">
+    <label for="name" class="form-label">Nome: </label>
+    <input type="text" name="name" class="form-control">
+  </div>
+  <div class="col-4">
+    <label for="birth" class="form-label">Data de Nascimento: </label>
+    <input type="date" name="birth" class="form-control">
+  </div>
+  <div class="col-4">
+    <label for="cardval" class="form-label">Validade CNH: </label>
+    <input type="date" name="cardval" class="form-control">
+  </div>
+  <div class="col-4">
+    <label for="celphone" class="form-label">Contato: </label>
+    <input type="text" name="celphone" class="form-control">
+  </div>
+  <div class="col-2">
+    <label for="cep" class="form-label">CEP: </label>
+    <input type="text" name="cep" class="form-control" placeholder="Apenas 8 dígitos">
+  </div>
+  <div class="col-md-9">
+    <label for="address" class="form-label">Logradouro: </label>
+    <input type="text" name="address" class="form-control">
+  </div>
+  <div class="col-md-1">
+    <label for="number" class="form-label">Nº: </label>
+    <input type="text" name="number" class="form-control">
+  </div>
+   <div class="col-md-8">
+    <label for="city" class="form-label">Cidade: </label>
+    <input type="text" name="city" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <label for="state" class="form-label">Estado: </label>
+    <input type="text" name="state" class="form-control">
+  </div>
+  </div>
+    <input type="submit" class="btn btn-outline-dark" value="Cadastrar">
+</form>
+</div>
+
+
+   
