@@ -25,6 +25,10 @@ app.get('/register/insertdata', function (req, res) {
   res.render('register')
 })
 
+app.get('/makereserve', function (req, res) {
+  res.render('makereserve')
+})
+
 app.post('/register/insertdata', function (req, res) {
     const cpf = req.body.cpf
     const name = req.body.name
@@ -48,6 +52,26 @@ app.post('/register/insertdata', function (req, res) {
     })
   });
 
+  app.post('/makereserve/insert', function (req, res) {
+    const cpf = req.body.cpf
+    const veiculo = req.body.veiculo
+    const placa = req.body.placa
+    const localretirada = req.body.localretirada    
+    const dataretirada = req.body.dataretirada 
+    const localdevolucao = req.body.localdevolucao
+    const datadevolucao = req.body.datadevolucao
+    
+  
+    const query = `INSERT INTO reserva (??, ??, ??, ??, ??, ??, ??) VALUES (?, ?, ?, ?, ?, ?, ?)`
+    const data = ['cpf', 'veiculo', 'placa', 'localretirada', 'dataretirada', 'localdevolucao', 'datadevolucao', cpf, veiculo, placa, localretirada, dataretirada, localdevolucao, datadevolucao]
+  
+    pool.query(query, data, function (err) {
+      if (err) {
+        console.log(err)
+      }
+      res.redirect('/')       
+    })
+  });
 
   app.get('/allreserves', function (req, res) {
     const reserve = req.params.cpf
@@ -62,5 +86,29 @@ app.post('/register/insertdata', function (req, res) {
     }) 
   })  
 
+  app.get('/allreserves/:cpf', function (req, res) {
+    const cpf = req.params.cpf    
+    const query = `SELECT name, cardval, celphone, veiculo, placa, localretirada, dataretirada, localdevolucao, datadevolucao FROM reserva INNER JOIN cliente ON cliente.cpf = reserva.cpf WHERE reserva.cpf = ${cpf}`
+    pool.query(query, function (error, data) {
+      if (error) {
+        console.log(error)
+      }      
+      const reserva = data 
+
+      
+
+      res.render('reserve', {reserva})
+    })    
+})
+
+
+
+  
+
+
+
 
 app.listen(4000)
+
+
+// `SELECT * FROM reserva WHERE cpf = ${cpf}`

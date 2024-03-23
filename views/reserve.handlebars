@@ -1,0 +1,21 @@
+<div class="container">  
+
+{{#each reserva}}
+<div class="container-reserva">
+<p>Nome: {{this.name}}</p>
+<p>Validade CNH: {{this.cardval}}</p>
+<p>Contato: {{this.celphone}}</p> 
+<p>Veiculo: {{this.veiculo}}</p>
+<p>Placa: {{this.placa}}</p>
+<p>Local retirada: {{this.localretirada}}</p>
+<p>Data retirada: {{this.dataretirada}} </p>
+<p>Local Devolução: {{this.localdevolucao}}</p>
+<p>Data Devolução: {{this.datadevolucao}}</p>
+<hr>
+
+</div>
+{{/each}}
+
+<button class="btn btn-dark atd">Atender pedido</button>
+
+</div> 
