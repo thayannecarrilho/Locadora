@@ -3,9 +3,18 @@ const exphbs = require('express-handlebars')
 const pool = require('./db/conn')
 console.log(pool)
 const app = express()
+const moment = require('moment')
 
 
-app.engine('handlebars', exphbs.engine())
+app.engine('handlebars', exphbs.engine({
+  defaultLayout: 'main',
+  helpers: {
+    formatDate: (date) => {
+      return moment(date).format("DD/MM/YYYY")
+    }
+  }  
+}))
+
 app.set('view engine', 'handlebars')
 
 app.use(
@@ -57,13 +66,15 @@ app.post('/register/insertdata', function (req, res) {
     const veiculo = req.body.veiculo
     const placa = req.body.placa
     const localretirada = req.body.localretirada    
-    const dataretirada = req.body.dataretirada 
+    const dataretirada = req.body.dataretirada
+    const horaretirada = req.body.horaretirada
     const localdevolucao = req.body.localdevolucao
     const datadevolucao = req.body.datadevolucao
+    const horadevolucao = req.body.horadevolucao
     
   
-    const query = `INSERT INTO reserva (??, ??, ??, ??, ??, ??, ??) VALUES (?, ?, ?, ?, ?, ?, ?)`
-    const data = ['cpf', 'veiculo', 'placa', 'localretirada', 'dataretirada', 'localdevolucao', 'datadevolucao', cpf, veiculo, placa, localretirada, dataretirada, localdevolucao, datadevolucao]
+    const query = `INSERT INTO reserva (??, ??, ??, ??, ??, ??, ??, ??, ??) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    const data = ['cpf', 'veiculo', 'placa', 'localretirada', 'dataretirada', 'horaretirada', 'localdevolucao', 'datadevolucao', 'horadevolucao', cpf, veiculo, placa, localretirada, dataretirada, horaretirada, localdevolucao, datadevolucao, horadevolucao]
   
     pool.query(query, data, function (err) {
       if (err) {
@@ -88,27 +99,20 @@ app.post('/register/insertdata', function (req, res) {
 
   app.get('/allreserves/:cpf', function (req, res) {
     const cpf = req.params.cpf    
-    const query = `SELECT name, cardval, celphone, veiculo, placa, localretirada, dataretirada, localdevolucao, datadevolucao FROM reserva INNER JOIN cliente ON cliente.cpf = reserva.cpf WHERE reserva.cpf = ${cpf}`
+    const query = `SELECT id, name, cardval, celphone, veiculo, placa, localretirada, dataretirada, horaretirada, localdevolucao, datadevolucao, horadevolucao FROM reserva INNER JOIN cliente ON cliente.cpf = reserva.cpf WHERE reserva.cpf = ${cpf}`
     pool.query(query, function (error, data) {
       if (error) {
         console.log(error)
       }      
-      const reserva = data 
-
-      
-
+      const reserva = data   
       res.render('reserve', {reserva})
     })    
 })
 
+//FALTA EDITAR E REMOVER
 
-
-  
 
 
 
 
 app.listen(4000)
-
-
-// `SELECT * FROM reserva WHERE cpf = ${cpf}`

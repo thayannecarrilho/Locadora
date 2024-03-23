@@ -14,23 +14,43 @@
     <label for="placa" class="form-label">Placa: </label>
     <input type="text" name="placa" class="form-control">
   </div>
-  <div class="col-8">
+  <div class="col-6">
     <label for="localretirada" class="form-label">Local de Retirada: </label>
-    <input type="text" name="localretirada" class="form-control">
+    <select class="form-control" name="localretirada">
+      <option value=""></option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
   </div>
-  <div class="col-4">
+  <div class="col-3">
     <label for="dataretirada" class="form-label">Data da Retirada: </label>
-    <input type="date" name="dataretirada" class="form-control">
+    <input type="date" id="date" name="dataretirada" class="form-control">
+    
   </div>
-  <div class="col-8">
+  <div class="col-3">
+    <label for="horaretirada" class="form-label">Hora da Retirada: </label>
+    <input type="time" name="horaretirada" class="form-control">
+  </div>
+  <div class="col-6">
     <label for="localdevolucao" class="form-label">Local de Devolução: </label>
-    <input type="text" name="localdevolucao" class="form-control">
+    <select class="form-control" name="localdevolucao">
+      <option value=""></option>
+      <option value="Congonhas Airport">Congonhas Airport</option>
+      <option value="Guarulhos Airport">Guarulhos Airport</option>
+      <option value="Campinas Airport">Campinas Airport</option>
+    </select>
   </div>
-  <div class="col-4">
+  <div class="col-3">
     <label for="datadevolucao" class="form-label">Data de Devolução: </label>
     <input type="date" name="datadevolucao" class="form-control">
   </div>  
+  <div class="col-3">
+    <label for="horadevolucao" class="form-label">Hora da Devolução: </label>
+    <input type="time" name="horadevolucao" class="form-control">
+  </div>
   </div>
     <input type="submit" class="btn btn-outline-dark" value="Cadastrar">
 </form>
 </div>
+

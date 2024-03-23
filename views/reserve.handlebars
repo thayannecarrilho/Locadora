@@ -1,21 +1,58 @@
-<div class="container">  
+{{#each reserva}} 
+<div class="container">
+  <h5>Reserva: {{this.id}}</h5>
+  <div class="card-form">
+<form class="row g-3">
+  <div class="col-8 resp">
+    <label class="form-label item">Nome: </label>
+    {{name}}
+  </div>
+    <div class="col-3 resp">
+    <label class="form-label item">Validade CNH: </label>
+    {{#formatDate cardval}}{{/formatDate}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Contato: </label>
+    {{celphone}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Veículo: </label>
+    {{veiculo}}
+  </div>
+  <div class="col-3 resp">
+    <label class="form-label item">Placa </label>
+    {{placa}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Local de Retirada: </label>
+    {{localretirada}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Data da Retirada: </label>
+    {{#formatDate dataretirada}}{{/formatDate}}
+  </div>
+  <div class="col-3 resp">
+    <label class="form-label item">Hora da Retirada: </label>
+    {{horaretirada}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Local de Devolução: </label>
+    {{localdevolucao}}
+  </div>
+  <div class="col-4 resp">
+    <label class="form-label item">Data de Devolução: </label>
+    {{#formatDate datadevolucao}}{{/formatDate}}
+  </div>  
+  <div class="col-3 resp">
+    <label class="form-label item">Hora da Devolução: </label>
+    {{horadevolucao}}
+  </div>
+  </div>
 
-{{#each reserva}}
-<div class="container-reserva">
-<p>Nome: {{this.name}}</p>
-<p>Validade CNH: {{this.cardval}}</p>
-<p>Contato: {{this.celphone}}</p> 
-<p>Veiculo: {{this.veiculo}}</p>
-<p>Placa: {{this.placa}}</p>
-<p>Local retirada: {{this.localretirada}}</p>
-<p>Data retirada: {{this.dataretirada}} </p>
-<p>Local Devolução: {{this.localdevolucao}}</p>
-<p>Data Devolução: {{this.datadevolucao}}</p>
-<hr>
-
-</div>
+  <div class="actions">
+      <a class="btn btn-outline-dark" href="/reserve/edit">Editar</a>
+  </div>
+</form>
+</div> 
 {{/each}}
 
-<button class="btn btn-dark atd">Atender pedido</button>
-
-</div> 
