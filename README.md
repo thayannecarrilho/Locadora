@@ -12,7 +12,7 @@
 ><p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
 
 ### 📋Pré-requisitos:
->Antes de começar, você precisa ter instalado em sua máquina as seguintes ferramentas: #RRGGBB**Git**, **Node.js** </br>
+>Antes de começar, você precisa ter instalado em sua máquina as seguintes ferramentas: **Git**, **Node.js** </br>
 >Além disto é bom ter um editor para trabalhar com o código como o **VSCode**.
 >1. Clone o repositório</br>
 >$ gitclone <https://github.com/thayannecarrilho/Locadora.git>
