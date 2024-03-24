@@ -16,7 +16,6 @@
 >Além disto é bom ter um editor para trabalhar com o código como o VSCode.
 >1. Clone o repositório</br>
 >$ gitclone <https://github.com/thayannecarrilho/Locadora.git>
-></br>
 >2. Acesse a pasta do projeto no terminal integrado e instale as dependências</br>
 >$ npm update
 ></br>
