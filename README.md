@@ -19,7 +19,7 @@
 1. Clone o repositório
   $ gitclone <https://github.com/thayannecarrilho/Locadora.git>
 
-2. Acesse a pasta do projeto no terminal integrado e instale as dependências
+2. Acesse a pasta no terminal integrado e instale as dependências
   $ npm update
 
 3. Execute a aplicação em modo de desenvolvimento
