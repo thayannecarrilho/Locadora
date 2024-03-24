@@ -15,7 +15,7 @@
 >Antes de começar, você precisa ter instalado em sua máquina as seguintes ferramentas: **Git**, **Node.js** </br>
 >Além disto é bom ter um editor para trabalhar com o código como o **VSCode**.
 >1. Clone o repositório</br>
->$ gitclone [<https://github.com/thayannecarrilho/Locadora.git>]
+>$ gitclone <<https://github.com/thayannecarrilho/Locadora.git>>
 >2. Acesse a pasta do projeto no terminal integrado e instale as dependências</br>
 >$ npm update
 >3. Execute a aplicação em modo de desenvolvimento</br>
