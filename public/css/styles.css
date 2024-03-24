@@ -56,13 +56,6 @@ input[type="submit"],
     margin: 1rem;
 }
 
-h5{
-    font-weight: bold;
-    color: #2d0692;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-}
-
 .item{
     font-weight: bold;
     text-transform: uppercase;
@@ -76,8 +69,15 @@ h5{
 
 .resp{
     border-top: 1px solid #2d0692;
+   
     border-right: 4px solid #2d0692;
     padding: 0.5rem;
     border-radius: 0.5rem;
     margin: 0.9rem;
 }
+
+.red:hover{
+    background-color: #b82323;
+    border: 1px solid #b82323;
+}
+

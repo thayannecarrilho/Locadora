@@ -1,25 +1,17 @@
 {{#each reserva}} 
 <div class="container">
-  <h5>Reserva: {{this.id}}</h5>
+  
   <div class="card-form">
 <form class="row g-3">
-  <div class="col-8 resp">
-    <label class="form-label item">Nome: </label>
-    {{name}}
-  </div>
-    <div class="col-3 resp">
-    <label class="form-label item">Validade CNH: </label>
-    {{#formatDate cardval}}{{/formatDate}}
-  </div>
-  <div class="col-4 resp">
-    <label class="form-label item">Contato: </label>
-    {{celphone}}
+  <div class="col-3 resp">
+    <label class="form-label item">Nº da Reserva: </label>
+    {{id}}
   </div>
   <div class="col-4 resp">
     <label class="form-label item">Veículo: </label>
     {{veiculo}}
   </div>
-  <div class="col-3 resp">
+  <div class="col-4 resp">
     <label class="form-label item">Placa </label>
     {{placa}}
   </div>
@@ -50,7 +42,7 @@
   </div>
 
   <div class="actions">
-      <a class="btn btn-outline-dark" href="/reserve/edit">Editar</a>
+      <a class="btn btn-outline-dark" href="/reserve/edit/{{id}}">Editar</a>
   </div>
 </form>
 </div> 
