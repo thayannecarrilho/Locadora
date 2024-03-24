@@ -3,10 +3,10 @@
 
 ## 👀Veja a interface do projeto:
 
-><a href="#home-page">Página Inicial</a><br/>
-><a href="#client">Cadastro Cliente</a><br/>
-><a href="#reserve">Cadastro Reserva</a><br/>
-><a href="#edit">Editando reserva</a>
+>👉<a href="#home-page">Página Inicial</a><br/>
+>👉<a href="#client">Cadastro Cliente</a><br/>
+>👉<a href="#reserve">Cadastro Reserva</a><br/>
+>👉<a href="#edit">Editando reserva</a>
 
 ## 🚀Começando:
 ><p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
