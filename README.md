@@ -1,5 +1,5 @@
 # 💻Projeto - Locadora de Veículos
-> <p>Este sistema permite cadastrar o CPF de um cliente e seus dados e vincular suas respectivas reservas, podendo posteriormente editá-las e apagá-las!</p>
+><p>Este sistema permite cadastrar o CPF de um cliente e seus dados e vincular suas respectivas reservas, podendo posteriormente editá-las e apagá-las!</p>
 
 ## 👀Veja a interface do projeto:
 
@@ -12,6 +12,10 @@
 ><p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
 
 ### 📋Pré-requisitos:
+>Antes de começar, você precisa ter instalado em sua máquina as seguintes ferramentas: Git, Node.js. </br>
+>Além disto é bom ter um editor para trabalhar com o código como o VSCode.
+>### 1. Clone o repositório
+>$ gitclone 
 
 
 
