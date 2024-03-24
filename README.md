@@ -16,14 +16,17 @@
 >Além disto é bom ter um editor para trabalhar com o código como o [VSCode](https://code.visualstudio.com/).
 
 ```bash
->1. Clone o repositório</br>
->$ gitclone <<https://github.com/thayannecarrilho/Locadora.git>>
->2. Acesse a pasta do projeto no terminal integrado e instale as dependências</br>
->$ npm update
->3. Execute a aplicação em modo de desenvolvimento</br>
->$ npm start
->4. Execute no navegador</br>
-> localhost:4000
+1. Clone o repositório</br>
+  $ gitclone <https://github.com/thayannecarrilho/Locadora.git>
+
+2. Acesse a pasta do projeto no terminal integrado e instale as dependências</br>
+  $ npm update
+
+3. Execute a aplicação em modo de desenvolvimento</br>
+  $ npm start
+
+4. Execute no navegador</br>
+  localhost:4000
 ```
 
 
