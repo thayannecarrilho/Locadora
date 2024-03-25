@@ -34,7 +34,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <img src="/img/home-page.gif"> </br>
 <hr>
-<img src="/img/cadastro_cliente.png"> </br>
+<img height="200" src="/img/cadastro_cliente.png"> </br>
 <hr>
 <img src="/img/reserva.png"> </br>
 <hr>
