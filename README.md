@@ -1,12 +1,6 @@
 # 💻Projeto - Locadora de Veículos
 ><p>Este sistema permite cadastrar o CPF de um cliente e seus dados e vincular suas respectivas reservas, podendo posteriormente editá-las e apagá-las!</p>
 
-### 👀Veja a interface do projeto
-👉<a href="paginainicial">Página Inicial</a><br/>
-👉<a href="#cadastro">Cadastro Cliente</a><br/>
-👉<a href="#reserva">Cadastro Reserva</a><br/>
-👉<a href="#editando">Editando reserva</a>
-
 ### 🚀Começando
 ><p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
 
@@ -36,9 +30,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ><code><img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="Nodejs"/> NodeJS</code>
 ><code><img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" alt="bootstrap"/> Bootstrap</code>
 
-
-# paginainicial
-.....
+### 👀Veja a interface do projeto
+>Página Inicial
+><img src="/img-readme/hom-page.gif">
+>Cadastro Cliente
+>Cadastro Reserva
+>Editando reserva
 
 
 
