@@ -32,7 +32,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 👀Veja a interface do projeto
 Página Inicial
-<img src="/img-readme/hom-page.gif">
+<img src="./img-readme/home-page.gif">
 Cadastro Cliente
 Cadastro Reserva
 Editando reserva
