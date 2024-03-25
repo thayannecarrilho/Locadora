@@ -32,7 +32,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 👀Veja a interface do projeto
 
-<img width="1000" src="/img/home-page.gif"> </br>
+<img width="1100" src="/img/home-page.gif"> </br>
 <hr>
 <img src="/img/cadastro_cliente.png"> </br>
 <hr>
