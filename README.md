@@ -31,13 +31,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ><code><img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" alt="bootstrap"/> Bootstrap</code>
 
 ### 👀Veja a interface do projeto
-<hr>
-###Página Inicial </br>
+
 <img src="/img/home-page.gif"> </br>
 <hr>
-Cadastro Cliente
-Cadastro Reserva
-Editando reserva
+<img src="/img/cadastro_cliente.png"> </br>
+<hr>
+<img src="/img/reserva.png"> </br>
+<hr>
+<img src="/img/Editando.gif"> </br>
+<hr>
 
 
 
