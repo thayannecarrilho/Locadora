@@ -38,7 +38,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <hr>
 <img src="/img/reserva.png"> </br>
 <hr>
-<img src="/img/Editando.gif"> </br>
+<img height="450" src="/img/Editando.gif"> </br>
 <hr>
 
 
