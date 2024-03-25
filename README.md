@@ -2,10 +2,10 @@
 ><p>Este sistema permite cadastrar o CPF de um cliente e seus dados e vincular suas respectivas reservas, podendo posteriormente editá-las e apagá-las!</p>
 
 ### 👀Veja a interface do projeto
->👉<a href="Pagina Inicial">Página Inicial</a><br/>
->👉<a href="#Cadastro Cliente">Cadastro Cliente</a><br/>
->👉<a href="#Cadastro Reserva">Cadastro Reserva</a><br/>
->👉<a href="#Editando reserva">Editando reserva</a>
+>👉<a href="Página">Página Inicial</a><br/>
+>👉<a href="#Cadastro">Cadastro Cliente</a><br/>
+>👉<a href="#Reserva">Cadastro Reserva</a><br/>
+>👉<a href="#Editando">Editando reserva</a>
 
 ### 🚀Começando
 ><p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
@@ -37,13 +37,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ><code><img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" alt="bootstrap"/> Bootstrap</code>
 
 
-## Pagina Inicial
+## Página
 
-## Cadastro Cliente
+## Cadastro
 
-## Cadastro Reserva
+## Reserva
 
-## Editando reserva
+## Editando 
 
 
 
