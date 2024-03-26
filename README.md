@@ -13,7 +13,7 @@
   $ gitclone <https://github.com/thayannecarrilho/Locadora.git>
 
 2. Acesse a pasta no terminal integrado e instale as dependências
-  $ npm update
+  $ npm updgrade
 
 3. Execute a aplicação em modo de desenvolvimento
   $ npm start
